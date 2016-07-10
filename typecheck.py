@@ -52,11 +52,11 @@
 # def accept_number(x: either(int, by_regex("^[0-9]+$"))):
 #     ...
 #
-# @typecheck_with_exceptions(input_parameter_error = MemoryError):
+# @typecheck_with_exceptions(input_parameter_error = MemoryError)
 # def custom_input_error(x: int): # now custom_input_error("foo") throws MemoryError
 #     ...
 #
-# @typecheck_with_exceptions(return_value_error = TypeError):
+# @typecheck_with_exceptions(return_value_error = TypeError)
 # def custom_return_error() -> str: # now custom_return_error() throws TypeError
 #     return 1
 #
